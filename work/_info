@@ -21,8 +21,8 @@ L33
 Vh:zWdC:S;hM06RQ2`hfRK0
 Z7 OP;C;10.2c;57
 32
-Z8 !s110 1387728190
-Z9 !s108 1387728190.224000
+Z8 !s110 1387732292
+Z9 !s108 1387732292.498000
 Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|Z:/home/keru/Documenti/gitDocuments/sec_adder/sec_port.vhd|
 Z11 !s107 Z:/home/keru/Documenti/gitDocuments/sec_adder/sec_port.vhd|
 Z12 o-work work -2002 -explicit -O0
@@ -100,8 +100,8 @@ L36
 VB6UH00=Z6oI<T6?PPB96=2
 R7
 32
-Z20 !s110 1387728184
-Z21 !s108 1387728184.681000
+Z20 !s110 1387732289
+Z21 !s108 1387732289.263000
 Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|Z:/home/keru/Documenti/gitDocuments/sec_adder/simple-kogge-stone.vhd|
 Z23 !s107 Z:/home/keru/Documenti/gitDocuments/sec_adder/simple-kogge-stone.vhd|
 R12
@@ -140,8 +140,8 @@ L8
 V3Xim@S[E?h2:b?Y2;nCjl1
 R7
 32
-Z27 !s110 1387728189
-Z28 !s108 1387728189.566000
+Z27 !s110 1387732290
+Z28 !s108 1387732289.939000
 Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|Z:/home/keru/Documenti/gitDocuments/sec_adder/simple-kogge-stone-tb.vhd|
 Z30 !s107 Z:/home/keru/Documenti/gitDocuments/sec_adder/simple-kogge-stone-tb.vhd|
 R12
@@ -324,7 +324,7 @@ R12
 R13
 !i10b 1
 Etest_encoder_decoder
-Z31 w1387728121
+Z31 w1387732285
 R1
 R2
 R3
@@ -337,9 +337,9 @@ V67zNeliDmk]fSPzGj5l_G3
 !s100 FzKT>8<bhj6eNWbmgckmQ1
 R7
 32
-Z34 !s110 1387728191
+Z34 !s110 1387732293
 !i10b 1
-Z35 !s108 1387728191.039000
+Z35 !s108 1387732293.495000
 Z36 !s90 -reportprogress|300|-work|work|-2002|-explicit|Z:/home/keru/Documenti/gitDocuments/sec_adder/port_test.vhd|
 Z37 !s107 Z:/home/keru/Documenti/gitDocuments/sec_adder/port_test.vhd|
 R12
@@ -353,6 +353,45 @@ l20
 L14
 Z39 V0HRz<J2P1Ohj64]jddckO2
 Z40 !s100 =Tghd@4_H7d8@jh4^bVRI0
+R7
+32
+R34
+!i10b 1
+R35
+R36
+R37
+R12
+R13
+Etest_port
+R31
+R1
+R2
+R3
+R4
+R32
+R33
+l0
+L31
+VYf?gVCWG9WkC]4lPKRYI40
+!s100 DMWz^P<9UGSm`z3K78VoB3
+R7
+32
+R34
+!i10b 1
+R35
+R36
+R37
+R12
+R13
+Atest
+R1
+R2
+R3
+DEx4 work 9 test_port 0 22 Yf?gVCWG9WkC]4lPKRYI40
+l51
+L40
+VS;aH>DLi7G_Go0h8VcKIg2
+!s100 ?WS4?4OYjeLPf_84P=eEV0
 R7
 32
 R34
