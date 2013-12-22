@@ -11,6 +11,31 @@ Model Technology ModelSim PE Student Edition vcom 10.2c Compiler 2013.07 Jul 18 
 -- Compiling entity ks_adder
 -- Compiling architecture behavioral of ks_adder
 
+} {} {}} Z:/home/keru/Documenti/gitDocuments/sec_adder/sec_port.vhd {1 {vcom -work work -2002 -explicit Z:/home/keru/Documenti/gitDocuments/sec_adder/sec_port.vhd
+Model Technology ModelSim PE Student Edition vcom 10.2c Compiler 2013.07 Jul 18 2013
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package sec_type
+-- Loading package sec_type
+-- Compiling entity encoder
+-- Compiling architecture secure of encoder
+-- Compiling entity decoder
+-- Compiling architecture secure of decoder
+-- Compiling entity sec_not
+-- Compiling architecture secure of sec_not
+-- Compiling entity sec_xor
+-- Compiling architecture secure of sec_xor
+
+} {} {}} Z:/home/keru/Documenti/gitDocuments/sec_adder/port_test.vhd {1 {vcom -work work -2002 -explicit Z:/home/keru/Documenti/gitDocuments/sec_adder/port_test.vhd
+Model Technology ModelSim PE Student Edition vcom 10.2c Compiler 2013.07 Jul 18 2013
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package sec_type
+-- Compiling entity test_encoder_decoder
+-- Compiling architecture test of test_encoder_decoder
+
 } {} {}} Z:/home/keru/Documenti/gitDocuments/sec_adder/simple-kogge-stone-tb.vhd {1 {vcom -work work -2002 -explicit Z:/home/keru/Documenti/gitDocuments/sec_adder/simple-kogge-stone-tb.vhd
 Model Technology ModelSim PE Student Edition vcom 10.2c Compiler 2013.07 Jul 18 2013
 -- Loading package STANDARD
