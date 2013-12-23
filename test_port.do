@@ -5,10 +5,7 @@ add wave -noupdate /test_port/b
 add wave -noupdate /test_port/r
 add wave -noupdate /test_port/not_a
 add wave -noupdate /test_port/a_xor_b
-add wave -noupdate /test_port/out_a_sign
-add wave -noupdate /test_port/out_b_sign
-add wave -noupdate /test_port/not_a_sign
-add wave -noupdate /test_port/a_xor_b_sign
+add wave -noupdate /test_port/a_and_b
 TreeUpdate [SetDefaultTree]
 WaveRestoreCursors {{Cursor 1} {0 ns} 0}
 quietly wave cursor active 0

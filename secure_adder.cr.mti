@@ -16,16 +16,13 @@ Model Technology ModelSim PE Student Edition vcom 10.2c Compiler 2013.07 Jul 18 
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling package sec_type
 -- Loading package sec_type
--- Compiling entity encoder
--- Compiling architecture secure of encoder
--- Compiling entity decoder
--- Compiling architecture secure of decoder
 -- Compiling entity sec_not
 -- Compiling architecture secure of sec_not
 -- Compiling entity sec_xor
 -- Compiling architecture secure of sec_xor
+-- Compiling entity sec_and
+-- Compiling architecture secure of sec_and
 
 } {} {}} Z:/home/keru/Documenti/gitDocuments/sec_adder/port_test.vhd {1 {vcom -work work -2002 -explicit Z:/home/keru/Documenti/gitDocuments/sec_adder/port_test.vhd
 Model Technology ModelSim PE Student Edition vcom 10.2c Compiler 2013.07 Jul 18 2013
@@ -47,5 +44,17 @@ Model Technology ModelSim PE Student Edition vcom 10.2c Compiler 2013.07 Jul 18 
 -- Compiling entity ks_adder_tb
 -- Compiling architecture tb of ks_adder_tb
 -- Loading package std_logic_textio
+
+} {} {}} Z:/home/keru/Documenti/gitDocuments/sec_adder/utils.vhd {1 {vcom -work work -2002 -explicit Z:/home/keru/Documenti/gitDocuments/sec_adder/utils.vhd
+Model Technology ModelSim PE Student Edition vcom 10.2c Compiler 2013.07 Jul 18 2013
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package sec_type
+-- Loading package sec_type
+-- Compiling entity encoder
+-- Compiling architecture secure of encoder
+-- Compiling entity decoder
+-- Compiling architecture secure of decoder
 
 } {} {}}
