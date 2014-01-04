@@ -22,6 +22,33 @@ architecture test of test_encoder_decoder is
     enc <= tmp;
     decoder1: decoder port map (tmp, b);
   end;
+
+-- TEST SIGNAL ENCODER DECODER --
+LIBRARY ieee;
+use ieee.std_logic_1164.all;
+use work.sec_type.all;
+
+entity test_encoder_decoder_vect is
+  generic ( width: integer := 4);
+  port(
+    a: in std_logic_vector(width-1 downto 0);
+    rnd: in std_logic_vector(width-1 downto 0);
+    enc: out t_sec_signal_vector(width-1 downto 0);
+    b: out std_logic_vector(width-1 downto 0));
+  end test_encoder_decoder_vect;
+  
+architecture test of test_encoder_decoder_vect is
+  component encoder_vector port(a: in std_logic_vector; r: in std_logic_vector; b: out t_sec_signal_vector);
+  end component;
+  component decoder_vector port(a: in t_sec_signal_vector; b: out std_logic_vector);
+  end component;
+  signal tmp: t_sec_signal_vector(width-1 downto 0);
+  begin
+    encoder1: encoder_vector port map (a, rnd, tmp);
+    enc <= tmp;
+    decoder1: decoder_vector port map (tmp, b);
+  end;
+  
   
 -- TEST OTHER PORTS --
 LIBRARY ieee;

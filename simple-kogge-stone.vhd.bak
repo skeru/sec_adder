@@ -1,3 +1,5 @@
+-- taken from http://www.openhdl.com/vhdl/651-vhdl-component-kogge-stone-adder-generic.html
+
 LIBRARY ieee;
 USE ieee.std_logic_1164.all;
  
@@ -36,10 +38,10 @@ ENTITY ks_adder IS
         width :     INTEGER := 5
     );
     PORT (
-        a :    IN STD_LOGIC_VECTOR(width-1 DOWNTO 0);
-        b :    IN STD_LOGIC_VECTOR(width-1 DOWNTO 0);
+        a :    IN STD_LOGIC_VECTOR(0 TO width-1);
+        b :    IN STD_LOGIC_VECTOR(0 TO width-1);
         c_in :    IN STD_LOGIC;
-        sum :    OUT STD_LOGIC_VECTOR(width-1 DOWNTO 0);
+        sum :    OUT STD_LOGIC_VECTOR(0 TO width-1);
         c_out :    OUT STD_LOGIC
     );
 END ks_adder;

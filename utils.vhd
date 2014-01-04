@@ -26,6 +26,31 @@ architecture secure of encoder is
     b(1) <= r;
   end;
 
+-- SIGNAL ENCODER --
+LIBRARY ieee;
+use ieee.std_logic_1164.all;
+use work.sec_type.all;
+
+entity encoder_vector is
+  generic (width : integer := 4);
+  port(
+    a: in std_logic_vector(width-1 downto 0);
+    r: in std_logic_vector(width-1 downto 0);
+    b: out t_sec_signal_vector(width-1 downto 0));
+  end encoder_vector;
+  
+architecture secure of encoder_vector is
+  begin 
+    enc_process: process(a,r)
+    begin
+      for i in width-1 downto 0 loop
+        b(i)(0) <= a(i) xor r(i);
+        b(i)(1) <= r(i);
+      end loop;
+    end process;
+  end;
+  
+  
 -- DECODER --
 LIBRARY ieee;
 use ieee.std_logic_1164.all;
@@ -42,4 +67,26 @@ architecture secure of decoder is
     b <= a(0) xor a(1);
   end;
 
+-- SIGNAL DECODER --
+LIBRARY ieee;
+use ieee.std_logic_1164.all;
+USE ieee.numeric_std.all;
+use work.sec_type.all;
+
+entity decoder_vector is
+  generic (width : integer := 4);
+  port(
+    a: in t_sec_signal_vector(width-1 downto 0);
+    b: out std_logic_vector(width-1 downto 0));
+  end decoder_vector;
+  
+architecture secure of decoder_vector is
+  begin 
+    enc_process: process(a)
+    begin
+      for i in width-1 downto 0 loop
+        b(i) <= a(i)(0) xor a(i)(1);
+      end loop;
+    end process;
+  end;
 
