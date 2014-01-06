@@ -11,7 +11,7 @@ Model Technology ModelSim PE Student Edition vcom 10.2c Compiler 2013.07 Jul 18 
 -- Compiling entity ks_adder
 -- Compiling architecture behavioral of ks_adder
 
-} {} {}} Z:/home/keru/Documenti/gitDocuments/sec_adder/secure-kogge-stone.vhd {1 {vcom -work work -2002 -explicit Z:/home/keru/Documenti/gitDocuments/sec_adder/secure-kogge-stone.vhd
+} {} {}} Z:/home/keru/Documenti/gitDocuments/sec_adder/secure-kogge-stone.vhd {2 {vcom -work work -2002 -explicit Z:/home/keru/Documenti/gitDocuments/sec_adder/secure-kogge-stone.vhd
 Model Technology ModelSim PE Student Edition vcom 10.2c Compiler 2013.07 Jul 18 2013
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -29,6 +29,46 @@ Model Technology ModelSim PE Student Edition vcom 10.2c Compiler 2013.07 Jul 18 
 -- Loading package my_funs
 -- Compiling entity secure_ks_adder
 -- Compiling architecture behavioral of secure_ks_adder
+** Warning: [10] Z:/home/keru/Documenti/gitDocuments/sec_adder/secure-kogge-stone.vhd(153): (vcom-1128) Missing reserved word BEGIN in generate statement.
+
+Model Technology ModelSim PE Student Edition vcom 10.2c Compiler 2013.07 Jul 18 2013
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package sec_type
+-- Compiling entity secure_bit_pg
+-- Compiling architecture secure of secure_bit_pg
+-- Compiling entity secure_group_pg
+-- Compiling architecture secure of secure_group_pg
+-- Compiling entity secure_group_g
+-- Compiling architecture secure of secure_group_g
+-- Compiling package my_funs
+-- Compiling package body my_funs
+-- Loading package my_funs
+-- Loading package my_funs
+-- Compiling entity secure_ks_adder
+-- Compiling architecture behavioral of secure_ks_adder
+** Warning: [10] Z:/home/keru/Documenti/gitDocuments/sec_adder/secure-kogge-stone.vhd(153): (vcom-1128) Missing reserved word BEGIN in generate statement.
+
+Model Technology ModelSim PE Student Edition vcom 10.2c Compiler 2013.07 Jul 18 2013
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package sec_type
+-- Compiling entity secure_bit_pg
+-- Compiling architecture secure of secure_bit_pg
+-- Compiling entity secure_group_pg
+-- Compiling architecture secure of secure_group_pg
+-- Compiling entity secure_group_g
+-- Compiling architecture secure of secure_group_g
+-- Compiling package my_funs
+-- Compiling package body my_funs
+-- Loading package my_funs
+-- Loading package my_funs
+-- Compiling entity secure_ks_adder
+-- Compiling architecture behavioral of secure_ks_adder
+** Warning: [10] Z:/home/keru/Documenti/gitDocuments/sec_adder/secure-kogge-stone.vhd(153): (vcom-1128) Missing reserved word BEGIN in generate statement.
+
 
 } {} {}} Z:/home/keru/Documenti/gitDocuments/sec_adder/sec_port.vhd {1 {vcom -work work -2002 -explicit Z:/home/keru/Documenti/gitDocuments/sec_adder/sec_port.vhd
 Model Technology ModelSim PE Student Edition vcom 10.2c Compiler 2013.07 Jul 18 2013
@@ -71,7 +111,6 @@ Model Technology ModelSim PE Student Edition vcom 10.2c Compiler 2013.07 Jul 18 
 -- Compiling architecture secure of encoder_vector
 -- Compiling entity decoder
 -- Compiling architecture secure of decoder
--- Loading package NUMERIC_STD
 -- Compiling entity decoder_vector
 -- Compiling architecture secure of decoder_vector
 

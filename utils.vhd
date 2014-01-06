@@ -40,14 +40,12 @@ entity encoder_vector is
   end encoder_vector;
   
 architecture secure of encoder_vector is
+  component encoder port(a, r: in std_logic; b: out t_sec_signal);
+  end component;
   begin 
-    enc_process: process(a,r)
-    begin
-      for i in width-1 downto 0 loop
-        b(i)(0) <= a(i) xor r(i);
-        b(i)(1) <= r(i);
-      end loop;
-    end process;
+    enc_gen: for i in width-1 downto 0 generate
+      enc_i: encoder port map (a(i), r(i), b(i));
+    end generate;
   end;
   
   
@@ -70,7 +68,6 @@ architecture secure of decoder is
 -- SIGNAL DECODER --
 LIBRARY ieee;
 use ieee.std_logic_1164.all;
-USE ieee.numeric_std.all;
 use work.sec_type.all;
 
 entity decoder_vector is
@@ -81,12 +78,11 @@ entity decoder_vector is
   end decoder_vector;
   
 architecture secure of decoder_vector is
+  component decoder port (a: in t_sec_signal; b: out std_logic);
+  end component;
   begin 
-    enc_process: process(a)
-    begin
-      for i in width-1 downto 0 loop
-        b(i) <= a(i)(0) xor a(i)(1);
-      end loop;
-    end process;
+    dec_gen: for i in width-1 downto 0 generate
+      dec_i: decoder port map (a(i), b(i));
+    end generate;
   end;
 

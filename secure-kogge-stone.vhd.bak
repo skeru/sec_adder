@@ -23,11 +23,11 @@ architecture secure of secure_bit_pg is
   end;
 
 
+-- secure group propagate generate --
 library ieee;
 use work.sec_type.all;
 use ieee.std_logic_1164.all;
 
--- secure group propagate generate --
 entity secure_group_pg is
   port(
     p0: in t_sec_signal;
@@ -54,6 +54,10 @@ architecture secure of secure_group_pg is
   end;
     
 -- secure group generate --
+library ieee;
+use work.sec_type.all;
+use ieee.std_logic_1164.all;
+
 entity secure_group_g is
   port(
     p1: in t_sec_signal;
@@ -114,6 +118,7 @@ entity secure_ks_adder is
     a: in t_sec_signal_vector(width-1 downto 0);
     b: in t_sec_signal_vector(width-1 downto 0);
     c_in: in t_sec_signal;
+    rnd: in std_logic_vector(width-1 downto 0);
     sum: out t_sec_signal_vector(width-1 downto 0);
     c_out: out t_sec_signal);
 end secure_ks_adder;
@@ -126,5 +131,41 @@ architecture behavioral of secure_ks_adder is
   end component;
   component sec_and port(a, b: in t_sec_signal; rnd: in std_logic; c: out t_sec_signal); -- AND --
   end component;
+  component secure_group_g port(p1, g0, g1: in t_sec_signal; rnd: in std_logic; g2: out t_sec_signal); -- group generate --
+  end component;
+  component secure_bit_pg port(a, b: in t_sec_signal; rnd: in std_logic; p, g: out t_sec_signal); -- bit generate propagate --
+  end component;
+  component secure_group_pg port(p0, p1, g0, g1: in t_sec_signal; rnd: in std_logic; p2, g2: out t_sec_signal); -- group generate propagate --
+  end component;
+  type t_adder_signal is array (depth downto 0) of t_sec_signal_vector (width-1 downto -1);
+  signal p,g: t_adder_signal;
 begin
+  -- bit propagate and generate
+  bit_propagate_generate_for: for i in width-1 downto 0 generate
+    bit_map: secure_bit_pg port map (a(i), b(i), rnd(i), p(0)(i), g(0)(i));
+  end generate bit_propagate_generate_for;
+  p(0)(-1) <= c_in;
+  g(0)(-1) <= c_in;
+  --depth generation
+  depth_for_gen: for d in 1 to depth generate
+    constant prev: integer := d-1;
+    constant shift: integer := 2**prev;
+    something: for s in (-1) to d-2 generate
+      p(d)(s) <= p(prev)(s);
+      g(d)(s) <= g(prev)(s);      
+    end generate something;
+    -- group generation
+    group_g_for_gen: for g_index in d-1 to (2**d)-1 generate
+      group_carry_generation: secure_group_g port map (p(prev)(g_index), g(prev)(g_index-shift), g(prev)(g_index), rnd(g_index), g(d)(g_index));
+    end generate group_g_for_gen;
+    -- group generation and propagation
+    group_gp_for_gen: for gp_index in (2**d) to width-1 generate
+      group_carry_generation_propagation: secure_group_pg port map (p(prev)(gp_index-shift), p(prev)(gp_index), g(prev)(gp_index-shift), g(prev)(gp_index), rnd(gp_index), p(d)(gp_index), g(d)(gp_index));
+    end generate group_gp_for_gen;
+  end generate depth_for_gen;
+  final_xor: for index in 0 to width-1 generate
+    adder_xor: sec_xor port map (p(depth)(index), g(depth)(index-1), rnd(index), sum(index));
+  end generate final_xor;
+  -- carry out
+  carry_out: secure_group_g port map (p(depth)(width)
 end;
