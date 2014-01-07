@@ -4,7 +4,7 @@ USE ieee.std_logic_1164.all;
 
 package sec_type is
 type t_sec_signal is array (1 downto 0) of std_logic;
-type t_sec_signal_vector is array (natural range <>) of t_sec_signal;
+type t_sec_signal_vector is array (integer range <>) of t_sec_signal;
 end sec_type;
 
 
@@ -44,7 +44,7 @@ architecture secure of encoder_vector is
   end component;
   begin 
     enc_gen: for i in width-1 downto 0 generate
-      enc_i: encoder port map (a(i), r(i), b(i));
+      encode: encoder port map (a(i), r(i), b(i));
     end generate;
   end;
   
@@ -82,7 +82,7 @@ architecture secure of decoder_vector is
   end component;
   begin 
     dec_gen: for i in width-1 downto 0 generate
-      dec_i: decoder port map (a(i), b(i));
+      decode: decoder port map (a(i), b(i));
     end generate;
   end;
 

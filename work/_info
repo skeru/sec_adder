@@ -9,8 +9,8 @@ dZ:/home/keru/Documenti/vhdl
 !i10e 25
 !i10f 100
 Edecoder
-Z0 w1388938469
-Z1 DPx4 work 8 sec_type 0 22 KEATlNP0>kbRD00[^6BbM2
+Z0 w1389053212
+Z1 DPx4 work 8 sec_type 0 22 e81Mj[]>9G01N6[n5VhJX1
 Z2 DPx3 std 6 textio 0 22 Y8d?=bLj9m4jiPLbo;>GT0
 Z3 DPx4 ieee 14 std_logic_1164 0 22 1bm?@Gd;P>[>_lN8Do9gP3
 Z4 dZ:/home/keru/Documenti/gitDocuments/sec_adder
@@ -21,8 +21,8 @@ L57
 VEYgAd@`[@UoK=;G[Ef6nT2
 Z7 OP;C;10.2c;57
 32
-Z8 !s110 1388938477
-Z9 !s108 1388938477.529000
+Z8 !s110 1389063590
+Z9 !s108 1389063590.249000
 Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|Z:/home/keru/Documenti/gitDocuments/sec_adder/utils.vhd|
 Z11 !s107 Z:/home/keru/Documenti/gitDocuments/sec_adder/utils.vhd|
 Z12 o-work work -2002 -explicit -O0
@@ -48,7 +48,7 @@ R13
 !s100 aUB0NJ0YUFAgJ>33aj:HU3
 !i10b 1
 Edecoder_vector
-Z14 w1388938469
+Z14 w1389053212
 R1
 R2
 R3
@@ -75,7 +75,7 @@ R3
 DEx4 work 14 decoder_vector 0 22 h@7UQdb^zYcWF@TQmFzl^0
 l83
 L80
-VAi65Fn=e^e=VTGo3SA]zY0
+VCAZ:2:9T3C0<B1`fM:9Xj3
 R7
 32
 R8
@@ -84,7 +84,7 @@ R10
 R11
 R12
 R13
-!s100 ToVQPFY0UT>Czkkc4SHWc3
+!s100 3A3`:_8^b25O2E@:fGSEK0
 !i10b 1
 Eencoder
 R14
@@ -153,7 +153,7 @@ R3
 DEx4 work 14 encoder_vector 0 22 nn6iQSm0?HilK7d1JnZM33
 l45
 L42
-VZb@6M_1VkHD]`V9n8f2SU1
+V`4<nC3=1GLjb5_i1hXV[C3
 R7
 32
 R8
@@ -162,7 +162,7 @@ R10
 R11
 R12
 R13
-!s100 NlERK^A:0B8<XN]<<[86D0
+!s100 [M9a>;od`3_CM8V]Ck46h2
 !i10b 1
 Eks_adder
 Z15 w1388788600
@@ -178,8 +178,8 @@ L36
 VB6UH00=Z6oI<T6?PPB96=2
 R7
 32
-Z20 !s110 1388941464
-Z21 !s108 1388941464.549000
+Z20 !s110 1389063093
+Z21 !s108 1389063093.209000
 Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|Z:/home/keru/Documenti/gitDocuments/sec_adder/simple-kogge-stone.vhd|
 Z23 !s107 Z:/home/keru/Documenti/gitDocuments/sec_adder/simple-kogge-stone.vhd|
 R12
@@ -218,8 +218,8 @@ L8
 V3Xim@S[E?h2:b?Y2;nCjl1
 R7
 32
-Z27 !s110 1388938473
-Z28 !s108 1388938473.138000
+Z27 !s110 1389063094
+Z28 !s108 1389063094.498000
 Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|Z:/home/keru/Documenti/gitDocuments/sec_adder/simple-kogge-stone-tb.vhd|
 Z30 !s107 Z:/home/keru/Documenti/gitDocuments/sec_adder/simple-kogge-stone-tb.vhd|
 R12
@@ -245,35 +245,36 @@ R12
 R13
 !s100 =lCBFl<g_?]8R`SjL7WRc2
 !i10b 1
-Pmy_funs
+Eks_test
+Z31 w1389053624
 R2
 R3
-Z31 w1388966080
+R1
 R4
-Z32 8Z:/home/keru/Documenti/gitDocuments/sec_adder/secure-kogge-stone.vhd
-Z33 FZ:/home/keru/Documenti/gitDocuments/sec_adder/secure-kogge-stone.vhd
+Z32 8Z:/home/keru/Documenti/gitDocuments/sec_adder/ks_test.vhd
+Z33 FZ:/home/keru/Documenti/gitDocuments/sec_adder/ks_test.vhd
 l0
-L85
-VD0;4PT00[:Tki][@O?Pg_1
-!s100 :i3dT>m70=CQ=eST0I8Bb1
+L6
+Vg=Adzg;V>TjWM0SYHARSM1
+!s100 5]2AD`F<`E_lNm5H2QOd_3
 R7
 32
-b1
-Z34 !s110 1388966093
+Z34 !s110 1389063594
 !i10b 1
-Z35 !s108 1388966093.006000
-Z36 !s90 -reportprogress|300|-work|work|-2002|-explicit|Z:/home/keru/Documenti/gitDocuments/sec_adder/secure-kogge-stone.vhd|
-Z37 !s107 Z:/home/keru/Documenti/gitDocuments/sec_adder/secure-kogge-stone.vhd|
+Z35 !s108 1389063594.348000
+Z36 !s90 -reportprogress|300|-work|work|-2002|-explicit|Z:/home/keru/Documenti/gitDocuments/sec_adder/ks_test.vhd|
+Z37 !s107 Z:/home/keru/Documenti/gitDocuments/sec_adder/ks_test.vhd|
 R12
 R13
-Bbody
-Z38 DPx4 work 7 my_funs 0 22 D0;4PT00[:Tki][@O?Pg_1
+Atest
 R2
 R3
-l0
-L89
-Z39 Vl4INc_6e@>4S<06U2AdPS3
-Z40 !s100 5I<8U;becYoQENngJk8CB3
+R1
+Z38 DEx4 work 7 ks_test 0 22 g=Adzg;V>TjWM0SYHARSM1
+l32
+L16
+Z39 V<FD6HLi_^6F`Yz7c7<;lT0
+Z40 !s100 WiFhaM7gzX?YLjI]::D>J1
 R7
 32
 R34
@@ -283,24 +284,62 @@ R36
 R37
 R12
 R13
+Pmy_funs
+R2
+R3
+Z41 w1389063576
+R4
+Z42 8Z:/home/keru/Documenti/gitDocuments/sec_adder/secure-kogge-stone.vhd
+Z43 FZ:/home/keru/Documenti/gitDocuments/sec_adder/secure-kogge-stone.vhd
+l0
+L85
+VFAc=Mh9fHLBJ4<Bih93eB2
+R7
+32
+b1
+Z44 !s110 1389063593
+Z45 !s108 1389063593.399000
+Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|Z:/home/keru/Documenti/gitDocuments/sec_adder/secure-kogge-stone.vhd|
+Z47 !s107 Z:/home/keru/Documenti/gitDocuments/sec_adder/secure-kogge-stone.vhd|
+R12
+R13
+!s100 oR4UEG<gYGhk<Ug4S742n2
+!i10b 1
+Bbody
+Z48 DPx4 work 7 my_funs 0 22 FAc=Mh9fHLBJ4<Bih93eB2
+R2
+R3
+l0
+L89
+VB@2]7GBE4233T?>aI;IP23
+R7
+32
+R44
+R45
+R46
+R47
+R12
+R13
 nbody
+!s100 `<hLiM]c;F>>`iPKLXLST2
+!i10b 1
 Esec_and
-Z41 w1388880314
+Z49 w1388880314
 R2
 R3
 R1
 R4
-Z42 8Z:/home/keru/Documenti/gitDocuments/sec_adder/sec_port.vhd
-Z43 FZ:/home/keru/Documenti/gitDocuments/sec_adder/sec_port.vhd
+Z50 8Z:/home/keru/Documenti/gitDocuments/sec_adder/sec_port.vhd
+Z51 FZ:/home/keru/Documenti/gitDocuments/sec_adder/sec_port.vhd
 l0
 L46
 V5EhEGi9JlWU?Y_Ib6V[YY1
 R7
 32
-Z44 !s110 1388938474
-Z45 !s108 1388938474.379000
-Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|Z:/home/keru/Documenti/gitDocuments/sec_adder/sec_port.vhd|
-Z47 !s107 Z:/home/keru/Documenti/gitDocuments/sec_adder/sec_port.vhd|
+Z52 !s110 1389063586
+Z53 !s108 1389063586.348000
+Z54 !s90 -reportprogress|300|-work|work|-2002|-explicit|Z:/home/keru/Documenti/gitDocuments/sec_adder/sec_port.vhd|
+Z55 !s107 Z:/home/keru/Documenti/gitDocuments/sec_adder/sec_port.vhd|
 R12
 R13
 !s100 ]X1Mn76EecQG3K4Kd8YKQ1
@@ -315,31 +354,31 @@ L53
 VCU`YPB;aYb?OoS8BD4:o60
 R7
 32
-R44
-R45
-R46
-R47
+R52
+R53
+R54
+R55
 R12
 R13
 !s100 NBlXC;Jl6e3O[G3FMeKQ72
 !i10b 1
 Esec_not
-R41
+R49
 R2
 R3
 R1
 R4
-R42
-R43
+R50
+R51
 l0
 L6
 VQWeNlQ<[<5ELzhfj0:1:72
 R7
 32
-R44
-R45
-R46
-R47
+R52
+R53
+R54
+R55
 R12
 R13
 !s100 E9]>VHfgdUin<Rgl^gBiC0
@@ -354,10 +393,10 @@ L12
 VlYh18G6TaeQEFZ39JW8=30
 R7
 32
-R44
-R45
-R46
-R47
+R52
+R53
+R54
+R55
 R12
 R13
 !s100 XIb:=HER]de?7:i^HR^e:3
@@ -375,29 +414,29 @@ R7
 R12
 R13
 w1387723180
-R47
-R46
+R55
+R54
 !s110 1387723196
 !s108 1387723196.686000
 !s100 IEmCiEO37=IeXa=JN`YRj1
 !i10b 1
 Esec_or
-R41
+R49
 R2
 R3
 R1
 R4
-R42
-R43
+R50
+R51
 l0
 L67
 V5GmKDBI:aeJFS^?gh8=8a1
 R7
 32
-R44
-R45
-R46
-R47
+R52
+R53
+R54
+R55
 R12
 R13
 !s100 ^::=QWRHH34A?`6HV3TYG1
@@ -412,10 +451,10 @@ L74
 VHmRFoLg7SUOAkbWU8X5GA3
 R7
 32
-R44
-R45
-R46
-R47
+R52
+R53
+R54
+R55
 R12
 R13
 !s100 <P:kEg;OY49cAK:>>ld7L2
@@ -429,7 +468,7 @@ R5
 R6
 l0
 L5
-VKEATlNP0>kbRD00[^6BbM2
+Ve81Mj[]>9G01N6[n5VhJX1
 R7
 32
 R8
@@ -438,25 +477,25 @@ R10
 R11
 R12
 R13
-!s100 NBak`mUQGiJ]_ek>Pa3CP3
+!s100 :aTDTzQCheIMQo3RzMYA@0
 !i10b 1
 Esec_xor
-R41
+R49
 R2
 R3
 R1
 R4
-R42
-R43
+R50
+R51
 l0
 L23
 V]hXBA=2U[2:T6i5dES5I[0
 R7
 32
-R44
-R45
-R46
-R47
+R52
+R53
+R54
+R55
 R12
 R13
 !s100 QcFSbN4ezo`L_X2>N]boR3
@@ -471,189 +510,189 @@ L30
 V;4@WKQk`EL0?@?6V4g2Lz1
 R7
 32
+R52
+R53
+R54
+R55
+R12
+R13
+!s100 FT?e8Lc29Nl=zZUUG28E71
+!i10b 1
+Esecure_bit_pg
+R41
+R2
+R3
+R1
+R4
+R42
+R43
+l0
+L6
+V>U9aSn>i8=:4e3HPmT[_T1
+R7
+32
 R44
 R45
 R46
 R47
 R12
 R13
-!s100 FT?e8Lc29Nl=zZUUG28E71
-!i10b 1
-Esecure_bit_pg
-R31
-R2
-R3
-R1
-R4
-R32
-R33
-l0
-L6
-V>U9aSn>i8=:4e3HPmT[_T1
 !s100 65jB[He8PR=Cg2G<;98`Q1
-R7
-32
-R34
 !i10b 1
-R35
-R36
-R37
-R12
-R13
 Asecure
 R2
 R3
 R1
-Z48 DEx4 work 13 secure_bit_pg 0 22 >U9aSn>i8=:4e3HPmT[_T1
+DEx4 work 13 secure_bit_pg 0 22 >U9aSn>i8=:4e3HPmT[_T1
 l20
 L15
-Z49 VMV7?=RB=eh6?j9:mk5HJ>0
-Z50 !s100 KYmMR0D>LfeVcFX@C=]W92
+Vz`lMd:8=HHaha?1MAKc>m2
+!s100 0U1<dC3hFNOZ6Xc9c`]I>2
 R7
 32
-R34
-!i10b 1
-R35
-R36
-R37
+R44
+R45
+R46
+R47
 R12
 R13
+!i10b 1
 Esecure_group_g
-R31
+R41
 R2
 R3
 R1
 R4
-R32
-R33
+R42
+R43
 l0
 L61
 V05VJ>mF5f1:QL85FRNT8?1
-!s100 HINU;jcl9<HYo?k?cCKE=3
 R7
 32
-R34
-!i10b 1
-R35
-R36
-R37
+R44
+R45
+R46
+R47
 R12
 R13
+!s100 HINU;jcl9<HYo?k?cCKE=3
+!i10b 1
 Asecure
 R2
 R3
 R1
-Z51 DEx4 work 14 secure_group_g 0 22 05VJ>mF5f1:QL85FRNT8?1
+DEx4 work 14 secure_group_g 0 22 05VJ>mF5f1:QL85FRNT8?1
 l76
 L70
-Z52 V<`JD^iWY2V93i>8Z;B;=_2
-Z53 !s100 =dJd4WLPQVOF[IlIQ:^_Z0
+VRW[0<e0Kj;9P>QfR;8Rkm1
+!s100 e:oE>Gzkm4IY9hY_^oFI61
 R7
 32
-R34
-!i10b 1
-R35
-R36
-R37
+R44
+R45
+R46
+R47
 R12
 R13
+!i10b 1
 Esecure_group_pg
-R31
+R41
 R2
 R3
 R1
 R4
-R32
-R33
+R42
+R43
 l0
 L31
 V7na`Q9X6lWj;ODnP66fZ03
-!s100 lhPB3oIX]aZLFY1V00MUS0
 R7
 32
-R34
-!i10b 1
-R35
-R36
-R37
+R44
+R45
+R46
+R47
 R12
 R13
+!s100 lhPB3oIX]aZLFY1V00MUS0
+!i10b 1
 Asecure
 R2
 R3
 R1
-Z54 DEx4 work 15 secure_group_pg 0 22 7na`Q9X6lWj;ODnP66fZ03
+DEx4 work 15 secure_group_pg 0 22 7na`Q9X6lWj;ODnP66fZ03
 l50
 L42
-Z55 VWnF5CF6z?3_HQcJj4HbhP2
-Z56 !s100 ;ED9YFC_<DKD1oSHMG=740
+V7MVCz2JJRIZSR:n5U2_UK3
+!s100 b:3PX[UQeV7ML[dfX@m?62
 R7
 32
-R34
-!i10b 1
-R35
-R36
-R37
+R44
+R45
+R46
+R47
 R12
 R13
+!i10b 1
 Esecure_ks_adder
-R31
+R41
 R1
-R38
+R48
 R2
 R3
 R4
-R32
-R33
+R42
+R43
 l0
-L115
-Vb>JR23<``G^5:95OVUfaC2
-!s100 APDaBOMaY_S?P<>gg[0ZB1
+L109
+V7V^?2<mBSD0god6lC0hYj3
 R7
 32
-R34
-!i10b 1
-R35
-R36
-R37
+R44
+R45
+R46
+R47
 R12
 R13
+!s100 6QW83gAI0fTNE[l`i^Q<73
+!i10b 1
 Abehavioral
 R1
-R38
+R48
 R2
 R3
-Z57 DEx4 work 15 secure_ks_adder 0 22 b>JR23<``G^5:95OVUfaC2
-l142
-L126
-Z58 VCl0UmVIA@Oi7?eTMPV5Th0
-Z59 !s100 MZ;N]M7l@P<UI>0DJaIFC0
+DEx4 work 15 secure_ks_adder 0 22 7V^?2<mBSD0god6lC0hYj3
+l132
+L120
+VfEH?cRDAo6@YhUVEeIA`z0
 R7
 32
-R34
-!i10b 1
-R35
-R36
-R37
+R44
+R45
+R46
+R47
 R12
 R13
+!s100 `7HKU7@Z:Nj<6EJB0PUD23
+!i10b 1
 Etest_encoder_decoder
-Z60 w1388882168
+Z56 w1388882168
 R1
 R2
 R3
 R4
-Z61 8Z:/home/keru/Documenti/gitDocuments/sec_adder/port_test.vhd
-Z62 FZ:/home/keru/Documenti/gitDocuments/sec_adder/port_test.vhd
+Z57 8Z:/home/keru/Documenti/gitDocuments/sec_adder/port_test.vhd
+Z58 FZ:/home/keru/Documenti/gitDocuments/sec_adder/port_test.vhd
 l0
 L6
 V67zNeliDmk]fSPzGj5l_G3
 R7
 32
-Z63 !s110 1388938475
-Z64 !s108 1388938475.846000
-Z65 !s90 -reportprogress|300|-work|work|-2002|-explicit|Z:/home/keru/Documenti/gitDocuments/sec_adder/port_test.vhd|
-Z66 !s107 Z:/home/keru/Documenti/gitDocuments/sec_adder/port_test.vhd|
+Z59 !s110 1389063587
+Z60 !s108 1389063587.240000
+Z61 !s90 -reportprogress|300|-work|work|-2002|-explicit|Z:/home/keru/Documenti/gitDocuments/sec_adder/port_test.vhd|
+Z62 !s107 Z:/home/keru/Documenti/gitDocuments/sec_adder/port_test.vhd|
 R12
 R13
 !s100 FzKT>8<bhj6eNWbmgckmQ1
@@ -668,31 +707,31 @@ L14
 V0HRz<J2P1Ohj64]jddckO2
 R7
 32
-R63
-R64
-R65
-R66
+R59
+R60
+R61
+R62
 R12
 R13
 !s100 =Tghd@4_H7d8@jh4^bVRI0
 !i10b 1
 Etest_encoder_decoder_vect
-R60
+R56
 R1
 R2
 R3
 R4
-R61
-R62
+R57
+R58
 l0
 L31
 VeCMDd=Enh5oSGjB>]J]7<3
 R7
 32
-R63
-R64
-R65
-R66
+R59
+R60
+R61
+R62
 R12
 R13
 !s100 MnH0B<IV5eN74ObaBPh^C2
@@ -707,31 +746,31 @@ L40
 V^h:DdIWCVidIS<an@e@b50
 R7
 32
-R63
-R64
-R65
-R66
+R59
+R60
+R61
+R62
 R12
 R13
 !s100 za`2[;?FF6I_J<50jWI:32
 !i10b 1
 Etest_port
-R60
+R56
 R1
 R2
 R3
 R4
-R61
-R62
+R57
+R58
 l0
 L58
 Vajmz@D8=:<b074m7;bGGB0
 R7
 32
-R63
-R64
-R65
-R66
+R59
+R60
+R61
+R62
 R12
 R13
 !s100 X=ncJQEDBHO:V0c]U2X4l1
@@ -746,10 +785,10 @@ L69
 VcbXOKOzVEanO0XZZSQU9k3
 R7
 32
-R63
-R64
-R65
-R66
+R59
+R60
+R61
+R62
 R12
 R13
 !s100 2agEeL8>GFb;c7Io2YBC]3
