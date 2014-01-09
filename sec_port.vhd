@@ -78,8 +78,8 @@ architecture secure of sec_or is
   end component;
   signal x, y, z: t_sec_signal;
   begin
-    notx: sec_not port map (a, x);
-    noty: sec_not port map (b, y);
-    andz: sec_and port map (x, y, rnd, z);
-    notz: sec_not port map (z, c);
+     notx: sec_not port map (a, x);
+     noty: sec_not port map (b, y);
+     andz: sec_and port map (x, y, rnd, z);
+     notz: sec_not port map (z, c);
   end;

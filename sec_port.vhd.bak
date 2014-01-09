@@ -58,3 +58,42 @@ architecture secure of sec_and is
     c(0) <= (a(0) and b(0)) xor rnd;
     c(1) <= (a(1) and b(1)) xor z;
   end;
+  
+-- SECURE OR PORT --
+library ieee;
+use work.sec_type.all;
+use ieee.std_logic_1164.all;
+  
+entity sec_or is
+  port(
+    a, b: in t_sec_signal;
+    rnd: in std_logic; -- random input signal
+    c: out t_sec_signal);
+  end sec_or;
+  
+architecture secure of sec_or is
+  component sec_not port(a: in t_sec_signal; b: out t_sec_signal);
+  end component;
+  component sec_and port(a, b: in t_sec_signal; rnd: in std_logic; c: out t_sec_signal);
+  end component;
+  signal x, y, c_2, z: t_sec_signal;
+  signal x_2, y_2, z_2 : std_logic;
+  begin
+    --process (a, b,x,y, rnd) begin
+    --alpha_notx: x(0) <= not a(0);
+    --x(1) <= a(1);
+    --alpha_noty: y(0) <= b(0);
+    --y(1) <= not b(1);
+     notx: sec_not port map (a, x);
+     noty: sec_not port map (b, y);
+     andz: sec_and port map (x, y, rnd, z);
+    --x_2 <= rnd xor (x(0) and y(1));
+    --z_2 <= x_2 xor (x(1) and y(0));
+    --c_2(0) <= (x(0) and y(0)) xor rnd;
+    --c_2(1) <= (x(1) and y(1)) xor z_2;
+
+    --alpha_notz: c(0) <= c_2(0);
+    --c(1) <= not c_2(1);
+     notz: sec_not port map (z, c);
+    --end process;
+  end;
