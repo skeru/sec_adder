@@ -1,1 +1,8 @@
 *.vstf
+work
+*.do
+*.bak
+*.mpf
+*.vstf
+wlft*
+
