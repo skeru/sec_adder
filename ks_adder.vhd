@@ -3,7 +3,7 @@ library ieee;
 use work.sec_type.all;
 use ieee.std_logic_1164.all;
 
-entity ks_test is
+entity ks_adder is
   generic( width :integer := 8);
   port (
     a: in std_logic_vector(width-1 downto 0);
@@ -12,9 +12,9 @@ entity ks_test is
     c_in: in std_logic;
     sum: out std_logic_vector(width-1 downto 0);
     c_out: out std_logic);
-  end ks_test;
+  end ks_adder;
   
-architecture test of ks_test is
+architecture secure of ks_adder is
   component secure_ks_adder generic (width : integer);
     port(a, b: in t_sec_signal_vector(width-1 downto 0); rnd: in std_logic_vector(width-1 downto 0); c_in: in t_sec_signal; sum: out t_sec_signal_vector(width-1 downto 0); c_out: out t_sec_signal);
   end component;
