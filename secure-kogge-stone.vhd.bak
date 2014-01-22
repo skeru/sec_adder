@@ -50,7 +50,7 @@ architecture secure of secure_group_pg is
   begin
     gen_tmp: sec_and port map (g0, p1, rnd, tmp); -- tmp <= g0 and p1
     gen_g: sec_or port map (g1, tmp, rnd, g2);    -- g2 <= g1 or tmp
-    gen_p: sec_xor port map (p1, p0, rnd, p2);    -- p2 <= p0 xor p1
+    gen_p: sec_and port map (p1, p0, rnd, p2);    -- p2 <= p0 and p1
   end;
     
 -- secure group generate --
@@ -166,20 +166,27 @@ begin
     -- group generation and propagation
     group_gp_for_gen: for gp_index in (2**d)-1 to width-1 generate begin
       group_carry_generation_propagation: secure_group_pg port map (
-        p(prev)(gp_index - shift),  -- p(prev)(gp_index - shift), 
-        p(prev)(gp_index), -- p(prev)(gp_index), 
-        g(prev)(gp_index - shift), -- g(prev)(gp_index - shift), 
-        g(prev)(gp_index), -- g(prev)(gp_index), 
+        p(prev)(gp_index - shift),  
+        p(prev)(gp_index), 
+        g(prev)(gp_index - shift), 
+        g(prev)(gp_index),
         rnd(gp_index), 
         p(d)(gp_index), 
         g(d)(gp_index));
     end generate group_gp_for_gen;
   end generate depth_for_gen;
   
+  -- sum final computation
   final_xor: for index in 0 to width - 1 generate begin
     adder_xor: sec_xor port map (p(0)(index), g(depth)(index - 1), rnd(index), sum(index));
   end generate final_xor;
+  
   -- carry out
-  carry_out: secure_group_g port map (p(depth)(width - 1), g(depth)(-1), g(depth)(width - 1), rnd(0), c_out);
+  carry_out: secure_group_g port map (
+    p(depth)(width - 1), 
+    g(depth)(-1), 
+    g(depth)(width - 1), 
+    rnd(0), 
+    c_out);
   
 end;

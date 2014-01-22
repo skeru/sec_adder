@@ -50,7 +50,7 @@ architecture secure of secure_group_pg is
   begin
     gen_tmp: sec_and port map (g0, p1, rnd, tmp); -- tmp <= g0 and p1
     gen_g: sec_or port map (g1, tmp, rnd, g2);    -- g2 <= g1 or tmp
-    gen_p: sec_xor port map (p1, p0, rnd, p2);    -- p2 <= p0 xor p1
+    gen_p: sec_and port map (p1, p0, rnd, p2);    -- p2 <= p0 and p1
   end;
     
 -- secure group generate --
@@ -107,7 +107,7 @@ use work.my_funs.all;
 use work.sec_type.all;
 
 entity secure_ks_adder is
-  generic( width: integer :=4);
+  generic( width: integer :=8);
   port(
     a: in t_sec_signal_vector(width-1 downto 0);
     b: in t_sec_signal_vector(width-1 downto 0);

@@ -32,7 +32,7 @@ use ieee.std_logic_1164.all;
 use work.sec_type.all;
 
 entity encoder_vector is
-  generic (width : integer := 4);
+  generic (width : integer := 8);
   port(
     a: in std_logic_vector(width-1 downto 0);
     r: in std_logic_vector(width-1 downto 0);
@@ -44,7 +44,7 @@ architecture secure of encoder_vector is
   end component;
   begin 
     enc_gen: for i in width-1 downto 0 generate
-      enc_i: encoder port map (a(i), r(i), b(i));
+      encode: encoder port map (a(i), r(i), b(i));
     end generate;
   end;
   
@@ -71,7 +71,7 @@ use ieee.std_logic_1164.all;
 use work.sec_type.all;
 
 entity decoder_vector is
-  generic (width : integer := 4);
+  generic (width : integer := 8);
   port(
     a: in t_sec_signal_vector(width-1 downto 0);
     b: out std_logic_vector(width-1 downto 0));
@@ -82,7 +82,7 @@ architecture secure of decoder_vector is
   end component;
   begin 
     dec_gen: for i in width-1 downto 0 generate
-      dec_i: decoder port map (a(i), b(i));
+      decode: decoder port map (a(i), b(i));
     end generate;
   end;
 
